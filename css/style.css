@@ -11,6 +11,7 @@
 
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
@@ -106,25 +107,35 @@ ul li a {
 
 /* Above the fold */
 .main {
-    /* background-image: url(video/roofing-clips.mp4); */
+    /* background-image: url('/video/bb_video_clips.mp4'); */
+    background-clip: url('/video/bb_video_clips.mp4');
     color: white;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+
+
+.main-header img {
+    width: 100%;
+    position: relative;
 }
 
 .main-video {
-    display: flex;
-    position: relative;
     z-index: 0;
     filter: brightness(0.4);
+    width: 100%;
 } 
+
 .overlay {
     position: absolute;
-    top: 400px; 
-    left: 400px;
+    top: 50%;
+    left: 50%;
+    /* width: 100%;
+    top: 50%;
+    left: 50%; */
+  
+    transform: translate(-50%, -50%);
     z-index: 1;
-    justify-content: center;
-    align-items: center;
-    align-items: center;
     padding: 0;
 }
 
@@ -415,12 +426,35 @@ input[type=text], select, textarea {
     margin: 0;
 }
 
+/* Larger Size Screen */
+@media screen and (max-width: 1240px) {
+    #slogan {
+        font-size: 1.2em;
+    }
+
+    .main-hook {
+        font-size: 2.5em;
+    }
+}
+
+/* Mid Sized Screens */
+@media screen and (max-width:1100px) {
+    .overlay { 
+        position: absolute;
+        top: 40%;
+        left: 54%;     
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        padding: 0;
+    }
+}
+
 /* Media Queries */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 925px) {
     /* Navigation */
     #main-nav ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     ul {
@@ -439,6 +473,7 @@ input[type=text], select, textarea {
 
     .open-menu {
         display: block;
+        margin-right: 3em;
     }
 
     /* Main */
@@ -455,10 +490,14 @@ input[type=text], select, textarea {
     .main-header {
         position: relative;
     }
+    
     .overlay {
-        position: initial;
-        justify-content: space-around;
-        align-items: center;
+        position: absolute;
+        top: 60%;
+        left: 50%;     
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        padding: 0;
         padding-bottom: 4em;
     }
 
@@ -530,11 +569,36 @@ input[type=text], select, textarea {
 
 /* Smallest Screens */
 @media screen and (max-width: 560px) {
+    /* Navigation */
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
     
+    /* Main */
+    .overlay {
+        position: absolute;
+        top: 60%;
+        left: 50%;     
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        padding: 0;
+    }
+
+    #slogan {
+        font-size: .9em;
+    }
+
+    .contact-btn {
+        font-size: .7em;
+    }
+
+
     /* About */
 
     .about-video {
-        width: 500px;
+        width: auto;
+        max-height: 300px;
     }
     .about-info {
         display: inline;
@@ -542,7 +606,7 @@ input[type=text], select, textarea {
         padding: 4em 4em 0 0;
         margin: 2em 0 1em 0;
         font-size: .8em;
-        width: 100%;
+        width: auto;
         margin-left: auto;
     }
 
@@ -567,9 +631,14 @@ input[type=text], select, textarea {
 
     /* Testimonials */
     .testimonial-section h2 {
-        width: 500px;
+        width: auto;
         font-size: 1.3em;
         overflow: hidden;
+    }
+
+    /* Contact Form */
+    .contact-form form input {
+        width: auto;
     }
 
     

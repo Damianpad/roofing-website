@@ -123,7 +123,7 @@ nav {
 
 .overlay {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;     
     transform: translate(-50%, -50%);
     z-index: 0;
@@ -429,9 +429,11 @@ footer i {
 
 /* Small Tablet */
 @media screen and (min-width: 620px) {
+
+    
     /* Main */
     .overlay {
-        top: 50%;
+        top: 40%;
         left: 50%;     
         padding-bottom: 2em;
         text-align: center;
@@ -467,7 +469,44 @@ footer i {
 
 /* Large Tablets */
 @media screen and (min-width: 960px) {
-        /* Main */
+    /* Navigation */
+    .nav-links {
+        display: flex;
+    }   
+    
+    .nav-links a {
+        text-decoration: none;
+        padding: 1em;
+        color: var(--primary-color);
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .open-menu {
+        display: none;
+    }
+
+    .quote-btn {
+        display: flex;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.9em;
+        font-weight: 700;
+        border: 1px solid var(--primary-color);
+        border-radius: 10px;
+        padding: 1em 3em;
+        background: var(--primary-color);
+        color: white;
+        min-width: 9em;
+        letter-spacing: 0.125em;
+        margin-right: 1em;
+        text-decoration: none;
+    }
+
+    .quote-btn:hover {
+        background: var(--primary-hover);
+    }
+
+    /* Main */
         .overlay {
             top: 40%;
             left: 50%;     

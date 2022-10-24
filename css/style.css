@@ -108,7 +108,7 @@ ul li a {
 /* Above the fold */
 .main {
     /* background-image: url('/video/bb_video_clips.mp4'); */
-    background-clip: url('/video/bb_video_clips.mp4');
+    /* background-clip: url('/video/bb_video_clips.mp4'); */
     color: white;
     font-family: 'Roboto', sans-serif;
     display: flex;

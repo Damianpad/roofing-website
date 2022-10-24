@@ -453,6 +453,8 @@ footer i {
         padding-bottom: 3em;
     }
 
+/* Testimonial */
+
     .testimonial-section header {
         padding: 3em;
     }
@@ -550,6 +552,7 @@ footer i {
 
         .main-buttons {
             display: flex;
+            justify-content: space-around;
         }
 
         .main-buttons button {
@@ -557,10 +560,35 @@ footer i {
         }
 
         /* About */
-        .about-info p {
-            padding: 2.5em;
-            font-size: 2.5em;
+        .about-info {
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            padding: 3em;
         }
+
+        .about-info h1 {
+            padding-bottom: 1em;
+        }
+
+        .about-video {
+            width: 60%;
+        }
+
+        .about-vid-p {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 2em;
+        }
+
+        .about-info p {
+        
+            padding: 1em;
+            font-size: 1.3em;
+        }
+
+
 
         /* Testimonial */
         .testimonial-section h1 {
@@ -570,4 +598,66 @@ footer i {
         .testimonial-section h2 {
             font-size: 2em;
         }
+}
+
+/* Desktops */
+@media screen and (min-width: 1200px) {
+    .main-video {
+        margin-top: 115px;
+        filter: brightness(0.4);
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        padding: 0;
+    }
+
+    #slogan {
+        text-align: left;
+        font-size: 2em;
+    }
+
+    .main-hook {
+        text-align: left;
+        font-size: 4em;
+        padding: 0;
+    }
+
+    .main-buttons {
+        display: flex;
+        justify-content: flex-start;
+        padding-right: 3em;
+    }
+
+    /* About */
+    .about-info h1 {
+        padding-bottom: 2em;
+    }
+
+    .about-vid-p {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2em;
+    }
+
+    .about-video {
+        width: 50%;
+    }
+
+    .about-info p {
+    
+        padding: 1em;
+        font-size: 2em;
+    }
+
+    
 }

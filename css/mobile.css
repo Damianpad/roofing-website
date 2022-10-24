@@ -659,5 +659,112 @@ footer i {
         font-size: 2em;
     }
 
-    
+    /* Footer */
+    /* Footer */
+  footer {
+    background: var(--secondary);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 5em;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4em;
+  }
+
+  .footer h2 {
+    margin: 1em 0 3em 0;
+    color: white;
+
+  }
+
+  .brand-footer {
+    font-size: 1em;
+    color: white;
+  }
+
+  .brand-footer img {
+    width: 200px;
+  }
+
+  .brand-footer p {
+    display: flex;
+    align-items: center;
+  }
+
+  .brand-footer i {
+    font-size: 1.25em;
+    padding: 1em;
+  }
+
+  .cta-footer {
+    justify-content: center;
+  }
+
+  .cta-footer li {
+    list-style: none;
+  }
+
+  .cta-footer li a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    padding: 1em;
+    white-space: nowrap;
+  }
+
+  .cta-footer button {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    font-weight: 700;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 1em 3em;
+    background: var(--primary-color);
+    color: white;
+    min-width: 15em;
+    letter-spacing: 0.125em;
+    justify-content: center;
+  }
+
+  .cta-footer button:hover {
+    background: var(--main-color-hover);
+    cursor: pointer;
+  }
+
+  .cta-footer a {
+    text-decoration: none;
+    color: white;
+  }
+.address {
+    padding: 1em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.address a:hover{
+    color: var(--main-color-hover);
+}
+
+.hours-footer {
+    display: inline;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: .6em;
+}
+
+.hours-footer h2 {
+    margin: 0;
+}
+
+.hours-footer ul {
+    display: inline;
+    color: white;
+}
 }

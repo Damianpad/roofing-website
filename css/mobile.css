@@ -660,9 +660,13 @@ footer i {
     }
 
     /* Contact Form */
-    contact-form form {
-        width: 500px;
-    }
+    /* .contact-form form input, #subject {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-items: center;
+    } */
 
     /* Footer */
   footer {

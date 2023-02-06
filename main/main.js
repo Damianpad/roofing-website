@@ -2,6 +2,7 @@
 // document.querySelector('#nav').addEventListener('scroll', changeNavColor)
 let nav = document.querySelector('nav')
 let bars = document.querySelector('.fa-bars')
+let arrow = document.querySelector('.fa-angle-down').addEventListener
 
 window.onscroll = function changeNavColor() {
     if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {

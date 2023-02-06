@@ -21,6 +21,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    scroll-behavior: smooth;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -124,27 +125,35 @@ nav {
 
 .main-header {
     width: 100%;
+    position: relative;
 }
 
 
 .main-video {
     filter: brightness(0.4);
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     object-fit: cover;
 }
 
 .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 40%;
-    left: 50%;     
-    transform: translate(-50%, -50%);
+    flex-direction: column;
+    
+    top: 60%;
+    left: 50%;  
+      
+    transform: translate(-50%, -50%);  
     z-index: 0;
     padding: 0;
     padding-bottom: 4em;
     color: white;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    text-transform: uppercase;
 }
 
 #slogan {
@@ -181,6 +190,20 @@ nav {
     display: none;
     text-transform: uppercase;
 }
+
+.fa-angle-down {
+    padding: 1em;
+    color: white;
+}
+
+.fa-angle-down:hover {
+    cursor: pointer;
+    font-size: 1.3em;
+    transition-property: font-size;
+    transition-duration: 1.3s;
+    /* transition-delay: 2s; */
+}
+
 
 /* About Us */
 .about-us {

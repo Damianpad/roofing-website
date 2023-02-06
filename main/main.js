@@ -2,14 +2,16 @@
 // document.querySelector('#nav').addEventListener('scroll', changeNavColor)
 let nav = document.querySelector('nav')
 let bars = document.querySelector('.fa-bars')
-let arrow = document.querySelector('.fa-angle-down').addEventListener
+let logo = document.querySelector('.logo')
 
 window.onscroll = function changeNavColor() {
-    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
+    if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100 ) {
         console.log(nav.scrollTop)
         nav.classList.remove('nav-dark')
         nav.classList.add('nav-white')
-        bars.classList.add('fa-bars-scroll')       
+        bars.classList.add('fa-bars-scroll')
+        logo.classList.add('dark-logo') 
+        logo.src='/assets/JJ\ Builders\ Logo_transparent.png'
 
     } else {
         console.log(nav.scrollTop)
@@ -18,6 +20,7 @@ window.onscroll = function changeNavColor() {
         nav.classList.remove('nav-white')
         bars.classList.add('fa-bars')
         bars.classList.remove('fa-bars-scroll')
+        logo.src='/assets/AllWhiteForVideos.png'
     }
 };
 

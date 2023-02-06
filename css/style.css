@@ -53,6 +53,7 @@ ul {
 
 .nav-links {
     display: flex;
+    text-transform: uppercase;
 }
 
 .nav-links a {
@@ -60,6 +61,11 @@ ul {
     justify-content: space-between;
     padding: 0 25px;
     color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.nav-links li {
+    text-transform: uppercase;
 }
 
 ul li a {
@@ -79,6 +85,7 @@ ul li a {
     min-width: 15em;
     letter-spacing: 0.125em;
     margin: 0 5em;
+    text-transform: uppercase;
 }
 
 .quote-btn:hover {

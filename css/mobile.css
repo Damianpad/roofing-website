@@ -49,26 +49,30 @@ table {
 /* Variables */
 
 :root {
-    --primary-color: #cca34f;
-    --primary-hover: #d4b067;
-    --secondary: #454c4e;
+    --primary-color: #232F3D;
+    --primary-hover: #5C718A;
+    --secondary: #8A6A33;
+    --highlight: #ced7de;
 }
 
 /* Scrolling Color change */
 .nav-white {
-    background-color: #fff;
+    background: white;
     transition: background-color 200ms linear;
+
 }
 
 .nav-dark {
-    background: #454c4e;
+
 }
+
+
 
 /* Navigation */
 
 nav {
-    background: var(--secondary);
-    color: white;
+    
+    color: var(--highlight);
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -81,44 +85,53 @@ nav {
 }
 
 .logo {
-    width: 150px;
+    width: 120px;
+    padding: 1em;
 }
 
 .nav-links {
     display: none;
+    text-transform: uppercase;
 }
 
 .quote-btn {
     display: none;
+    text-transform: uppercase;
 }
 
 .fa-bars {
-    font-size: 1.5em;
-    padding: .7em;
-    background: var(--primary-color);
-    border-radius: 10%;
+    font-size: 2.3em;
+    color: white;
     margin: 0 .6em;
 }
 
 .fa-bars:hover {
-    background: var(--primary-hover);
     cursor: pointer;
+}
+
+.fa-bars-scroll {
+    font-size: 2.3em;
+    color: var(--primary-color);
+    margin: 0 .6em;
+    transition: background-color 200ms linear;
 }
 
 /* Main */
 .main {
-    background: var(--secondary);
+    background: var(--primary-color);
+    width: 100%;
+}
 
+.main-header {
+    width: 100%;
 }
 
 
 .main-video {
-    margin-top: 115px;
     filter: brightness(0.4);
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     object-fit: cover;
-
 }
 
 .overlay {
@@ -135,8 +148,9 @@ nav {
 }
 
 #slogan {
-    font-size: 2em;
-    color: var(--primary-color);
+    font-size: 1.6em;
+    color: white;
+    text-transform: uppercase;
 }
 
 .main-hook {
@@ -155,6 +169,7 @@ nav {
     min-width: 15em;
     letter-spacing: 0.125em;
     margin: 1em 5em;
+    text-transform: uppercase;
 }
 
 .learn-btn:hover {
@@ -164,26 +179,52 @@ nav {
 
 .contact-btn {
     display: none;
+    text-transform: uppercase;
 }
 
 /* About Us */
-.about-info {
-    background: var(--secondary);
+.about-us {
+    background: var(--primary-color);
     color: white;
     font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+}
+.about-image {
+    background: var(--primary-color);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.about-spacer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-info {
+    background: var(--primary-color);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    width: 100%;
 }
 
 .about-info h2, h1{
     display: flex;
     justify-content: center;
     text-align: center;
-    
+    line-height: 25px;
 }
 
 .about-info h2 {
     font-size: 2em;
+    font-weight: 600;
     padding: .8em;
-    color: var(--primary-color);
+    color: white;
 }
 
 .about-info h1 {
@@ -196,11 +237,12 @@ nav {
     margin: 0;
 }
 
-.about-info p {
-    font-size: 1.5em;
-    padding: 1.5em;
-    color: var(--primary-color);
-    text-align: center;
+.about-paragraph {
+    line-height: 25px;
+    font-size: 1em;
+    padding: 3em;
+    color: white;
+    text-align: left;
 }
 
 /* Testimonial */
@@ -775,4 +817,21 @@ footer i {
     display: inline;
     color: white;
 }
+}
+/* Mailchimp CSS */
+#mc_embed_signup{
+    background: var(--primary-color); 
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif;  
+    width:600px;
+
+}
+
+#mce-MMERGE5 {
+    height:200px
+}
+
+.helper_text {
+    color: red;
+    background: green;
 }

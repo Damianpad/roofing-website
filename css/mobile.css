@@ -91,6 +91,8 @@ table {
     display: none;
     position: relative;
     z-index: 3;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
 }
 
 #close-icon:hover{
@@ -103,10 +105,11 @@ table {
 
 .menu-item {
   display: block;
-  margin: 2rem 4rem;
+  margin: 2rem 1rem;
   font-size: 1.8rem;
   color: white;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 .menu-item:hover {

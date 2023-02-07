@@ -4,6 +4,11 @@ let nav = document.querySelector('nav')
 let bars = document.querySelector('.fa-bars')
 let logo = document.querySelector('.logo')
 
+const menu = document.querySelector(".nav-links");
+const menuItems = document.querySelectorAll(".menuItem");
+const closeIcon = document.querySelector('#close-icon')
+const menuIcon = document.querySelector('.menu-icon')
+
 window.onscroll = function changeNavColor() {
     if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100 ) {
         console.log(nav.scrollTop)
@@ -23,6 +28,30 @@ window.onscroll = function changeNavColor() {
         logo.src='/assets/AllWhiteForVideos.png'
     }
 };
+
+function toggleMenu() {
+    console.log('clicked!');
+    if (menu.classList.contains("showMenu")) {
+        console.log('BYEBYE MENU');
+        menu.classList.remove("showMenu");
+        menuIcon.style.display = "block";
+        closeIcon.style.display = "none";
+    } else {
+        console.log('added Menu');
+        menu.classList.add("showMenu");
+        menuIcon.style.display = "none";
+        closeIcon.style.display = "block";
+    }
+  }
+
+  bars.addEventListener("click", toggleMenu);
+  closeIcon.addEventListener('click', toggleMenu);
+
+  menuItems.forEach( 
+    function(menuItem) { 
+      menuItem.addEventListener("click", toggleMenu);
+    }
+  )
 
 // function changeNavColor() {
 //     if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
